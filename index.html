@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAF Pictures — Bio Links</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    </style>
+</head>
+<body class="p-4 flex flex-col items-center justify-start">
+    <!-- Preloader (kept) -->
+    <div id="preloader">
+        <div class="three-body">
+            <div class="three-body__dot"></div>
+            <div class="three-body__dot"></div>
+            <div class="three-body__dot"></div>
+        </div>
+    </div>
+
+    <div id="main-content" class="hidden w-full flex-grow flex flex-col justify-between items-center">
+        <div class="container-wrapper">
+            <div class="shared-card-style w-full max-w-md mx-auto text-center">
+                <!-- Toggle Night Mode (scaled down) -->
+                <div class="flex justify-end mb-2">
+                  <label class="relative inline-flex items-center cursor-pointer">
+                    <input id="darkModeToggle" class="sr-only peer" type="checkbox" />
+                    <div
+                      class="w-16 h-8 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️'] before:absolute before:h-6 before:w-6 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400 peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-[4px] after:right-1 after:translate-y-full after:w-6 after:h-6 after:opacity-0 after:transition-all after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0"
+                    ></div>
+                  </label>
+                </div>
+
+                <!-- Profile header -->
+                <div class="flex flex-col items-center mb-6">
+                    <img id="profileImage" src="img/logo_black.png" alt="RAF Pictures" class="profile-img w-24 h-24 rounded-full object-cover mb-4">
+                    <h1 class="text-3xl font-bold text-gray-800 mb-1">RAF Pictures</h1>
+                    <p class="text-gray-600">3D Render & Animation</p>
+                </div>
+
+                <!-- Social icons -->
+                <div class="social-links mb-6">
+                  <!-- WhatsApp -->
+                  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp">
+                    <button class="Btn bg-whatsapp">
+                      <span class="svgContainer">
+                        <i class="fa-brands fa-whatsapp" style="color:white;font-size:1.44em"></i>
+                      </span>
+                      <span class="BG"></span>
+                    </button>
+                  </a>
+                  <!-- Instagram -->
+                  <a href="https://instagram.com/rafpictures" target="_blank" rel="noopener" aria-label="Instagram">
+                    <button class="Btn bg-instagram">
+                      <span class="svgContainer">
+                        <i class="fa-brands fa-instagram" style="color:white;font-size:1.44em"></i>
+                      </span>
+                      <span class="BG"></span>
+                    </button>
+                  </a>
+                  <!-- Email -->
+                  <a href="mailto:hello@rafpictures.example" aria-label="Email">
+                    <button class="Btn bg-email">
+                      <span class="svgContainer">
+                        <i class="fa-solid fa-envelope" style="color:white;font-size:1.44em"></i>
+                      </span>
+                      <span class="BG"></span>
+                    </button>
+                  </a>
+                  <!-- TikTok -->
+                  <a href="https://tiktok.com/@rafpictures" target="_blank" rel="noopener" aria-label="TikTok">
+                    <button class="Btn bg-tiktok">
+                      <span class="svgContainer">
+                        <i class="fa-brands fa-tiktok" style="color:white;font-size:1.44em"></i>
+                      </span>
+                      <span class="BG"></span>
+                    </button>
+                  </a>
+                  <!-- YouTube -->
+                  <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+                    <button class="Btn bg-youtube">
+                      <span class="svgContainer">
+                        <i class="fa-brands fa-youtube" style="color:white;font-size:1.44em"></i>
+                      </span>
+                      <span class="BG"></span>
+                    </button>
+                  </a>
+                </div>
+
+                <!-- Bio -->
+                <div class="mb-6">
+                    <p class="text-sm font-light">Halo! Ini adalah kumpulan link saya — profil, portofolio, dan kontak. Klik salah satu untuk menuju ke halaman terkait.</p>
+                </div>
+
+                <!-- Links list -->
+                <div class="space-y-4">
+                    <a href="https://linktr.ee/rafpictures" target="_blank" rel="noopener" class="shared-card-style block text-center py-4 hover:scale-98 transform transition-all">
+                        <i class="fa-solid fa-link fa-fw mr-2"></i> Linktree — Semua link
+                    </a>
+                    <a href="https://instagram.com/rafpictures" target="_blank" rel="noopener" class="shared-card-style block text-center py-4 hover:scale-98 transform transition-all">
+                        <i class="fab fa-instagram fa-fw mr-2"></i> Instagram — @rafpictures
+                    </a>
+                    <a href="https://youtube.com/" target="_blank" rel="noopener" class="shared-card-style block text-center py-4 hover:scale-98 transform transition-all">
+                        <i class="fab fa-youtube fa-fw mr-2"></i> YouTube — Showreel & Tutorial
+                    </a>
+                    <a href="https://behance.net/" target="_blank" rel="noopener" class="shared-card-style block text-center py-4 hover:scale-98 transform transition-all">
+                        <i class="fab fa-behance fa-fw mr-2"></i> Portofolio — Behance
+                    </a>
+                    <a href="mailto:hello@rafpictures.example" class="shared-card-style block text-center py-4 hover:scale-98 transform transition-all">
+                        <i class="fa-solid fa-envelope fa-fw mr-2"></i> Kontak — Email
+                    </a>
+                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="shared-card-style block text-center py-4 hover:scale-98 transform transition-all">
+                        <i class="fa-brands fa-whatsapp fa-fw mr-2"></i> WhatsApp — 0812-3456-7890
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer (kept exactly as original) -->
+        <footer class="mt-8 text-center text-gray-500 text-sm">
+            <p>&copy; 2025 RAF Pictures. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
