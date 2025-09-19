@@ -22,18 +22,34 @@
     </div>
 
     <div id="main-content" class="hidden w-full flex-grow flex flex-col justify-between items-center">
-        <div class="container-wrapper">
-            <div class="shared-card-style w-full max-w-xl mx-auto text-center">
-                <!-- Toggle Night Mode (scaled down) -->
-                <div class="flex justify-end mb-2">
-                  <label class="relative inline-flex items-center cursor-pointer">
-                    <input id="darkModeToggle" class="sr-only peer" type="checkbox" />
-                    <div
-                      class="w-16 h-8 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️'] before:absolute before:h-6 before:w-6 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400 peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-[4px] after:right-1 after:translate-y-full after:w-6 after:h-6 after:opacity-0 after:transition-all after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0"
-                    ></div>
-                  </label>
-                </div>
-
+      <div class="container-wrapper">
+        <div class="shared-card-style w-full max-w-xl mx-auto text-center">
+          <!-- Subscribe button + Toggle Night Mode -->
+          <div class="flex justify-between items-center mb-2">
+            <!-- Tombol Subscribe -->
+            <button
+              class="subscribe-btn group flex items-center justify-start w-10 h-10 rounded-full cursor-pointer relative overflow-hidden transition-all duration-200 shadow-lg hover:w-40 hover:rounded-lg active:translate-x-1 active:translate-y-1"
+            >
+              <div
+                class="flex items-center justify-center w-full transition-all duration-300 group-hover:justify-start group-hover:px-3"
+              >
+                <i class="fa-solid fa-bell w-4 h-4"></i>
+              </div>
+              <div
+                class="subscribe-btn i absolute right-8 transform translate-x-full opacity-0 text-lg duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+              >
+              Subscribe
+              </div>
+            </button>
+          
+            <!-- Toggle Night Mode -->
+            <label class="relative inline-flex items-center cursor-pointer">
+              <input id="darkModeToggle" class="sr-only peer" type="checkbox" />
+              <div
+                class="w-16 h-8 rounded-full ring-0 peer duration-500 outline-none bg-gray-200 overflow-hidden before:flex before:items-center before:justify-center after:flex after:items-center after:justify-center before:content-['☀️'] before:absolute before:h-6 before:w-6 before:top-1/2 before:bg-white before:rounded-full before:left-1 before:-translate-y-1/2 before:transition-all before:duration-700 peer-checked:before:opacity-0 peer-checked:before:rotate-90 peer-checked:before:-translate-y-full shadow-lg shadow-gray-400 peer-checked:shadow-lg peer-checked:shadow-gray-700 peer-checked:bg-[#383838] after:content-['🌑'] after:absolute after:bg-[#1d1d1d] after:rounded-full after:top-[4px] after:right-1 after:translate-y-full after:w-6 after:h-6 after:opacity-0 after:transition-all after:duration-700 peer-checked:after:opacity-100 peer-checked:after:rotate-180 peer-checked:after:translate-y-0"
+              ></div>
+            </label>         
+          </div>        
                 <!-- Profile header -->
                 <div class="flex flex-col items-center mb-6">
                     <img id="profileImage" src="img/logo_black.png" alt="RAF Pictures" class="profile-img w-24 h-24 rounded-full object-cover mb-4">
@@ -44,7 +60,7 @@
                 <!-- Social icons -->
                 <div class="flex flex-wrap justify-center gap-x-2 gap-y-4 my-6">
                   <!-- WhatsApp -->
-                  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" aria-label="WhatsApp" class="">
+                  <a href="https://api.whatsapp.com/send?phone=6289513170863" target="_blank" rel="noopener" aria-label="WhatsApp" class="">
                     <button class="Btn bg-whatsapp">
                       <span class="svgContainer">
                         <i class="fa-brands fa-whatsapp" style="color:white;font-size:1.44em"></i>
@@ -53,7 +69,7 @@
                     </button>
                   </a>
                   <!-- Instagram -->
-                  <a href="https://instagram.com/rafpictures" target="_blank" rel="noopener" aria-label="Instagram" class="">
+                  <a href="https://www.instagram.com/rizqyalfajri" target="_blank" rel="noopener" aria-label="Instagram" class="">
                     <button class="Btn bg-instagram">
                       <span class="svgContainer">
                         <i class="fa-brands fa-instagram" style="color:white;font-size:1.44em"></i>
@@ -62,7 +78,7 @@
                     </button>
                   </a>
                   <!-- Email -->
-                  <a href="mailto:hello@rafpictures.example" aria-label="Email" class="">
+                  <a href="mailto:alfajririzqi@gmail.com" aria-label="Email" class="">
                     <button class="Btn bg-email">
                       <span class="svgContainer">
                         <i class="fa-solid fa-envelope" style="color:white;font-size:1.44em"></i>
@@ -71,7 +87,7 @@
                     </button>
                   </a>
                   <!-- TikTok -->
-                  <a href="https://tiktok.com/@rafpictures" target="_blank" rel="noopener" aria-label="TikTok" class="">
+                  <a href="https://tiktok.com/@alfajririzqi" target="_blank" rel="noopener" aria-label="TikTok" class="">
                     <button class="Btn bg-tiktok">
                       <span class="svgContainer">
                         <i class="fa-brands fa-tiktok" style="color:white;font-size:1.44em"></i>
@@ -80,7 +96,7 @@
                     </button>
                   </a>
                   <!-- YouTube -->
-                  <a href="https://youtube.com/" target="_blank" rel="noopener" aria-label="YouTube" class="">
+                  <a href="https://youtube.com/@rafpictures_studios" target="_blank" rel="noopener" aria-label="YouTube" class="">
                     <button class="Btn bg-youtube">
                       <span class="svgContainer">
                         <i class="fa-brands fa-youtube" style="color:white;font-size:1.44em"></i>
