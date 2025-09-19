@@ -28,19 +28,40 @@
           <div class="flex justify-between items-center mb-2">
             <!-- Tombol Subscribe -->
             <button
-              class="subscribe-btn group flex items-center justify-start w-10 h-10 rounded-full cursor-pointer relative overflow-hidden transition-all duration-200 shadow-lg hover:w-40 hover:rounded-lg active:translate-x-1 active:translate-y-1"
+              id="subscribeBtn"
+              class="subscribe-btn group flex items-center justify-start w-10 h-10 rounded-full cursor-pointer relative overflow-hidden transition-all duration-1000 ease-in-out shadow-lg hover:w-40 hover:rounded-lg active:translate-x-1 active:translate-y-1"
             >
-              <div
-                class="flex items-center justify-center w-full transition-all duration-300 group-hover:justify-start group-hover:px-3"
-              >
+              <div class="flex items-center justify-center w-full transition-all duration-1000 ease-in-out group-hover:justify-start group-hover:px-3">
                 <i class="fa-solid fa-bell w-4 h-4"></i>
               </div>
               <div
-                class="subscribe-btn i absolute right-8 transform translate-x-full opacity-0 text-lg duration-300 group-hover:translate-x-0 group-hover:opacity-100"
+                class="absolute right-8 transform translate-x-full opacity-0 text-lg transition-all duration-1000 ease-in-out group-hover:translate-x-0 group-hover:opacity-100"
               >
-              Subscribe
+                Subscribe
               </div>
             </button>
+            
+            <!-- Popup Modal -->
+            <div id="subscribeModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+              <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg w-80 relative">
+                <!-- Tombol close -->
+                <button id="closeModal" class="absolute top-2 right-2 text-gray-500 hover:text-gray-800 dark:hover:text-gray-300">
+                  ✕
+                </button>
+            
+                <h2 class="text-xl font-semibold mb-4 text-gray-800 dark:text-gray-200">Subscribe</h2>
+                <p class="mb-4 text-sm text-gray-600 dark:text-gray-400">Masukkan email kamu untuk dapat update terbaru:</p>
+            
+                <form action="https://formspree.io/f/xzzanrzk" method="POST" class="space-y-3">
+                  <input type="email" name="email" placeholder="Email kamu" required
+                        class="w-full p-2 border rounded focus:outline-none focus:ring focus:ring-red-400 dark:bg-gray-700 dark:text-white">
+                  <button type="submit"
+                          class="w-full bg-red-600 text-white py-2 rounded hover:bg-red-700 transition">
+                    Kirim
+                  </button>
+                </form>
+              </div>
+            </div>
           
             <!-- Toggle Night Mode -->
             <label class="relative inline-flex items-center cursor-pointer">

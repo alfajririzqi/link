@@ -70,3 +70,23 @@ function calculatePrice() {
     }, 1000);
 }
 
+  const subscribeBtn = document.getElementById("subscribeBtn");
+  const subscribeModal = document.getElementById("subscribeModal");
+  const closeModal = document.getElementById("closeModal");
+
+  // buka modal saat tombol subscribe ditekan
+  subscribeBtn.addEventListener("click", () => {
+    subscribeModal.classList.remove("hidden");
+  });
+
+  // tutup modal saat tombol X ditekan
+  closeModal.addEventListener("click", () => {
+    subscribeModal.classList.add("hidden");
+  });
+
+  // tutup modal saat klik area gelap di luar popup
+  subscribeModal.addEventListener("click", (e) => {
+    if (e.target === subscribeModal) {
+      subscribeModal.classList.add("hidden");
+    }
+  });

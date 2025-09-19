@@ -249,7 +249,7 @@ body.dark-mode .text-gray-500 { color: #6b7280; }
 
 /* Default (light mode) */
 .subscribe-btn {
-  background-color: #f8f8f8; 
+  background-color: #f0f0f0; 
 }
 .subscribe-btn i {
   color: #000000;
